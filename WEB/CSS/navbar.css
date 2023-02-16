@@ -73,9 +73,49 @@ body{
     margin-top: 6.5px;
 }
 
-
 .texte{
     font-size: 16px;
     text-decoration: none;
     color: black;
 }
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .container-nav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .a{
+        display: none;
+    }
+    .b{
+        display: none;
+    }
+    .c{
+        display: none;
+    }
+    .logo{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .menu{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+    }
+
+}
+    
