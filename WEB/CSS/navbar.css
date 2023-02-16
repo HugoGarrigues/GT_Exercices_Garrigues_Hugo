@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body{
+    font-family: 'test', sans-serif;;
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../assets/PorscheNext-Regular.otf');
+}
+.navbar{
+    background-color: white;
+    border-bottom: 2px solid #e6e6e6;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+}
+
+.logo{
+    height: 57px;
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+}
+
+.bouton{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    margin-top: 9.5px;
+    color: black;
+}
+
+.a{
+    flex-direction: column;
+    text-align: center;
+    height: 42.5px;
+    width: 95px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+.b{
+    flex-direction: column;
+    text-align: center;
+    height: 42.5px;
+    width: 95px;
+    margin-right: 60px;
+    text-decoration: none;
+    margin-top: 5.5px;
+}
+
+.c{
+    flex-direction: column;
+    text-align: center;
+    height: 42.5px;
+    width: 95px;
+    margin-right: 60px;
+    text-decoration: none;
+    margin-top: 6.5px;
+}
+
+
+.texte{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
