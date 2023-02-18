@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body{
+    font-family: 'test', sans-serif;;
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../assets/PorscheNext-Regular.otf');
+}
+
+.vertical-navbar{
+    margin-top: 15vh;
+    margin-left: 1vh;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+
+}
+
+.titre{
+    color: black;
+    font-size: 10vh;
+}
+
+.modele{
+    margin-top: 2vh;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #313639;
+    padding: 12px 20px 12px 40px;
+}
