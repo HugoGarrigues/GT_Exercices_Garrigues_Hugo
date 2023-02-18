@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'test';
+    src: url(../assets/PorscheNext-Regular.otf);
+}
+
+body{
+    font-family: 'test', sans-serif;;
+}
+
+.footer1{
+    position: fixed;
+    background-color: #1f2022;
+    height: 25vh;
+    display: flex;
+    width: 50%;
+    left: 0;
+}
+
+.footer2{
+    position: fixed;
+    background-color: #1f2022;
+    height: 25vh;
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    left: 50%;
+}
+
+.footer3{
+    position: fixed;
+    background-color: #1f2022;
+    height: 7vh;
+    display: flex;
+    width: 100%;
+    margin-top: 25vh;
+    border-top: white solid 1px;
+    align-items: center;
+    color: white;
+}
+
+.titre-footer{
+    font-size: 2.2em;
+}
+
+.texte-footer{
+    padding-left: 3vw;
+    padding-top: 5vh;
+    color: white;
+}
+
+.soustitre-footer{
+    font-size: 1em;
+    padding-top: 3vh;
+    width: 120px;
+}
+
+.follow{
+    margin-top: 11vh;
+    margin-right: 4vw;
+    color: white;
+    text-align: center;
+}
+
+.texte-footer2{
+    margin-left: 20px;
+}
+
+.call-us{
+    margin-top: 11vh;
+    margin-right: 2vw;
+    color: white;
+    text-align: center;
+}
