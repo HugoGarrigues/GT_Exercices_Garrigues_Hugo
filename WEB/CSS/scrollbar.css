@@ -6,13 +6,24 @@
 }
 
 body{
-  font-family: 'test', sans-serif;;
+  font-family: 'test', sans-serif;
+  overflow-y: visible;
 }
 
 @font-face {
   font-family: 'test';
   src: url('../assets/PorscheNext-Regular.otf');
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(143, 137, 137);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+}
+
 
 .container{
   height: 30vh;
