@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'test', sans-serif;;
+}
+
+@font-face {
+  font-family: 'test';
+  src: url('../assets/PorscheNext-Regular.otf');
+}
+
+.container-photo {
+  height: 44vh;
+  display: flex;
+  width: 100%;
+}
+
+.image-button {
+  height: 100%;
+  width: calc(100%/3);
+  display: flex;
+}
+
+.image-button img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nom-voiture {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 2.3em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.description-voiture {
+  width: 400px;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 30px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+@media screen and (max-width: 1300px){
+  .description-voiture {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .description-voiture {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .description-voiture {
+    width: 100px;
+  }
+
+  .nom-voiture {
+    font-size: 1.5em;
+  }
+
+  .description-voiture {
+    font-size: 0.8em;
+  }
+
+  .container-photo {
+    height: 30vh;
+  }
+
+  .image-button {
+    width: calc(100%/3);
+  }
+
+  .image-button img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
