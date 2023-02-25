@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -16,6 +15,7 @@ body{
 .dropdown {
     display: inline-block;
     width: fit-content;
+    margin-top: 12vh;
   }
 
   .dropdown img {
