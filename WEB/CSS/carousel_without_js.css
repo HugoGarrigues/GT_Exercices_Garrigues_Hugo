@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#carousel {
+    height: 40vh;
+    display: flex;
+}
+
+.photo-carousel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 5px;
+}
+
+.img-carousel {
+    margin-left: 15px;
+}
+
+ul{
+    list-style-type : none;
+}
+
+.img1 {
+    width: 20vw;
+    height: 100%;
+    background-color: aqua;
+}
+
+.img2 {
+    width: 20vw;
+    height: 100%;
+    background-color: blue;
+}
+
+.img3 {
+    width: 20vw;
+    height: 100%;
+    background-color: red;
+}
+
+.img4 {
+    width: 20vw;
+    height: 100%;
+    background-color: green;
+}
+
+.img5 {
+    width: 20vw;
+    height: 100%;
+    background-color: yellow;
+}
+
+.img6 {
+    width: 20vw;
+    height: 100%;
+    background-color: orange;
+}
+
+
+
+
+
