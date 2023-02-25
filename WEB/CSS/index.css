@@ -28,8 +28,26 @@ body{
     width: auto;
 }
 
+#footer{
+    margin-top: 10vh;
+}
+
+.texte-porsche{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: auto;
+}
+
 @media screen and (max-width: 768px) {
     .texte-modeles{
+        font-size: 2em;
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .texte-porsche{
         font-size: 2em;
         margin-left: 20px;
         width: auto;
