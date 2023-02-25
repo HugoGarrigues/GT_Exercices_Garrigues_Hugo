@@ -6,12 +6,32 @@
 #carousel {
     height: 40vh;
     display: flex;
+    text-align: center;
+}
+
+.photo-carousel::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+
+.photo-carousel::-webkit-scrollbar-thumb {
+    background-color: #1f2022;
+    border-radius: 3px; 
+}
+  
+.photo-carousel::-webkit-scrollbar-track {
+     background-color: #eee;
 }
 
 .photo-carousel {
     display: flex;
-    overflow-x: scroll;
     padding: 5px;
+    overflow-x: scroll;
+}
+
+.fleche{
+    margin-top: 15vh;
+    font-size: 2em;
 }
 
 .img-carousel {
@@ -57,8 +77,3 @@ ul{
     height: 100%;
     background-color: orange;
 }
-
-
-
-
-
