@@ -71,7 +71,7 @@ body{
   }
 
   .description-voiture {
-    font-size: 0.8em;
+    display: none;
   }
 
   .container-photo {
