@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container-modeles{
+    position: absolute;
+    margin-top: 15vh;
+    width: 73%;
+    right: 0;
+    margin-right: 10vh;
+    border-left: 1px solid gray;
+}
+
+.titre-modeles{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    color: black;
+    width: auto;
+}
+
+.porsche{
+    width: calc(100%/3);
+    display: flex;
+    text-align: center;
+}
+
+.texte-porsche{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+    width: auto;
+    text-align: justify;
+
+}
+
+.photo{
+    margin-left: 40px;
+}
+
+.nom-voiture {
+    position: absolute;
+    font-size: 2.3em;
+    font-weight: 600;
+    color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    .titre-modeles{
+        font-size: 2em;
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .container-modeles{
+        width: 60%;
+        position: absolute;
+        left: 0;
+    }
+}
+    
