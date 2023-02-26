@@ -15,7 +15,7 @@ body{
 }
 
 .vertical-navbar{
-    margin-top: 30vh;
+    margin-top: 40vh;
     margin-left: 10vh;
     display: flex;
     flex-direction: column;
