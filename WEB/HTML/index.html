@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../CSS/cards.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/carousel_without_js.css">
+    <link rel="stylesheet" href="../CSS/carousel_with_js.css">
+    <script src="../js/carousel_with_js.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -33,7 +35,15 @@
         </div>
     </header>
 
-    <section id="carousel-js"></section>
+    <div id="carousel-js">
+        <img src="../assets/carousel1.webp" alt="La forêt de peupliers" id="image">
+        <div id="carregauche" onclick="suivant(-1)">
+            <p class="gauche"><</p>
+                </div>
+        <div id="carredroite" onclick="suivant(1)">
+            <p class="droite">></p>
+        </div>
+    </div>
 
     <p class="texte-modeles">Modèles</p>
 
