@@ -1,4 +1,4 @@
-const image = ["../assets/911(1).jpg", "../assets/911(2).jpg", "../assets/911(3).jpg", "../assets/911(4).jpg", "../assets/911(5).jpg"];
+const image = ["../../assets/911(1).jpg", "../../assets/911(2).jpg", "../../assets/911(3).jpg", "../../assets/911(4).jpg", "../../assets/911(5).jpg"];
 var nombre = 0;
 
 function suivant(sens) {
