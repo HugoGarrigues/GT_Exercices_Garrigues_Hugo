@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'test', sans-serif;
+}
+
+@font-face {
+  font-family: 'test';
+  src: url('../assets/PorscheNext-Regular.otf');
+}
+
+.logo_porsche{
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+
+.logo {
+  height: 57px;
+  width: 45px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.bouton {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  justify-content: end;
+}
+
+.a {
+  flex-direction: column;
+  text-align: center;
+  height: 42.5px;
+  width: 95px;
+  margin-right: 60px;
+  text-decoration: none;
+}
+
+.b {
+  flex-direction: column;
+  text-align: center;
+  height: 42.5px;
+  width: 95px;
+  margin-right: 60px;
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+.c {
+  flex-direction: column;
+  text-align: center;
+  height: 42.5px;
+  width: 95px;
+  margin-right: 60px;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.texte {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+
+    }
+    .a{
+        display: none;
+    }
+    .b{
+        display: none;
+    }
+    .c{
+        display: none;
+    }
+    .logo{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .menu{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        margin-right: 18px;
+        margin-top: 20px;
+    }
+
+}
