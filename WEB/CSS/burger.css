@@ -1,0 +1,23 @@
+.burger{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .burger{
+        margin-top: 20vh;
+        text-align: center;
+        display: block;
+    }
+    
+    .car a{
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+    }
+    
+    .car img{
+        width: 35%;
+        height: 35%;
+    }
+}
+    
