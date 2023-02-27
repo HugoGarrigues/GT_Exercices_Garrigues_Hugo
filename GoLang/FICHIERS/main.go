@@ -40,7 +40,7 @@ func menu() {
 		case 4:
 			remplacetxt()
 		case 5:
-			fmt.Println("Au revoir !")
+			fmt.Println("A Bientot !")
 			os.Exit(0)
 		default:
 			fmt.Println("Votre Choix n'est pas valide, veuillez réessayer")
@@ -50,133 +50,69 @@ func menu() {
 }
 
 func recuptxt() {
-	var choix int
-	fmt.Println("______________________________________")
-	fmt.Println("|                                     |")
-	fmt.Println("|      Quel fichier voulez-vous ?     |")
-	fmt.Println("|                                     |")
-	fmt.Println("|           1. Fichier 1              |")
-	fmt.Println("|           2. Fichier 2              |")
-	fmt.Println("|           3. Fichier 3              |")
-	fmt.Println("|_____________________________________|")
-	fmt.Scan(&choix)
-	switch choix {
-	case 1:
-		cheminFichier := "1.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		menu()
-	case 2:
-		cheminFichier := "2.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		menu()
-	case 3:
-		cheminFichier := "3.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		menu()
-	default:
-		fmt.Println("Votre Choix n'est pas valide, veuillez réessayer")
-		recuptxt()
+	cheminFichier := "1.txt"
+	contenuFichier, err := ioutil.ReadFile(cheminFichier)
+	if err != nil {
+		fmt.Println("Erreur lors de la lecture du fichier :", err)
+		return
 	}
+	fmt.Println(string(contenuFichier))
+	menu()
 }
 
 func ajouttxt() {
-	var choix int
-	fmt.Println("______________________________________")
-	fmt.Println("|                                     |")
-	fmt.Println("|      Quel fichier voulez-vous ?     |")
-	fmt.Println("|                                     |")
-	fmt.Println("|           1. Fichier 1              |")
-	fmt.Println("|           2. Fichier 2              |")
-	fmt.Println("|           3. Fichier 3              |")
-	fmt.Println("|_____________________________________|")
-	fmt.Scan(&choix)
-	switch choix {
-	case 1:
-		cheminFichier := "1.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		var ajout string
-		fmt.Println("Que voulez-vous ajouter ?")
-		fmt.Scan(&ajout)
-		f, err := os.OpenFile(cheminFichier, os.O_APPEND|os.O_WRONLY, 0600)
-		if err != nil {
-			panic(err)
-		}
-		defer f.Close()
-		if _, err = f.WriteString(ajout); err != nil {
-			panic(err)
-		}
-		fmt.Println("Le texte a bien été ajouté !")
-		menu()
-	case 2:
-		cheminFichier := "2.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		var ajout string
-		fmt.Println("Que voulez-vous ajouter ?")
-		fmt.Scan(&ajout)
-		f, err := os.OpenFile(cheminFichier, os.O_APPEND|os.O_WRONLY, 0600)
-		if err != nil {
-			panic(err)
-		}
-		defer f.Close()
-		if _, err = f.WriteString(ajout); err != nil {
-			panic(err)
-		}
-		fmt.Println("Le texte a bien été ajouté !")
-		menu()
-	case 3:
-		cheminFichier := "3.txt"
-		contenuFichier, err := ioutil.ReadFile(cheminFichier)
-		if err != nil {
-			fmt.Println("Erreur lors de la lecture du fichier :", err)
-			return
-		}
-		fmt.Println(string(contenuFichier))
-		var ajout string
-		fmt.Println("Que voulez-vous ajouter ?")
-		fmt.Scan(&ajout)
-		f, err := os.OpenFile(cheminFichier, os.O_APPEND|os.O_WRONLY, 0600)
-		if err != nil {
-			panic(err)
-		}
-		defer f.Close()
-		if _, err = f.WriteString(ajout); err != nil {
-			panic(err)
-		}
-		fmt.Println("Le texte a bien été ajouté !")
-		menu()
-	default:
-		fmt.Println("Votre Choix n'est pas valide, veuillez réessayer")
-		ajouttxt()
+	var ajout string
+	cheminFichier := "1.txt"
+	contenuFichier, err := ioutil.ReadFile(cheminFichier)
+	if err != nil {
+		fmt.Println("Erreur lors de la lecture du fichier :", err)
+		return
 	}
+	fmt.Println(string(contenuFichier))
+	fmt.Println("Que veux-tu ajouter ?")
+	fmt.Scan(&ajout)
+	f, err := os.OpenFile(cheminFichier, os.O_APPEND|os.O_WRONLY, 0600)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+	if _, err = f.WriteString(ajout); err != nil {
+		panic(err)
+	}
+	fmt.Println("Le texte a bien été ajouté au fichier !")
+	menu()
 }
 
 func supprimetxt() {
+	cheminFichier := "1.txt"
+	f, err := os.OpenFile(cheminFichier, os.O_WRONLY|os.O_TRUNC, 0600)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+	fmt.Println("Le fichier texte a bien été vidé !")
+	menu()
 }
 
 func remplacetxt() {
+	var ajout string
+	cheminFichier := "1.txt"
+	f, err := os.OpenFile(cheminFichier, os.O_WRONLY|os.O_TRUNC, 0600)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+	fmt.Println("Le fichier a bien été vidé !")
+	fmt.Println("Que voulez-vous ajouter ?")
+	fmt.Scan(&ajout)
+	f, err = os.OpenFile(cheminFichier, os.O_APPEND|os.O_WRONLY, 0600)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+	if _, err = f.WriteString(ajout); err != nil {
+		panic(err)
+	}
+	fmt.Println("Le texte a bien été ajouté !")
+	menu()
 }
