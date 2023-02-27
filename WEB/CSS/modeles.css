@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .container-modeles{
@@ -9,7 +8,7 @@ body{
     margin-top: 15vh;
     width: 73%;
     right: 0;
-    margin-right: 10vh;
+    margin-right: 35vh;
     border-left: 1px solid gray;
 }
 
@@ -57,7 +56,7 @@ body{
     }
 
     .container-modeles{
-        width: 60%;
+        width: 10%;
         position: absolute;
         left: 0;
     }
